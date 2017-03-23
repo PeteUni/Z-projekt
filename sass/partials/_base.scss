@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bl1;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    background-image: url("../images/bckgrnd1_small.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {margin-top: 5px;
+    z-index: 1;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+}
+
+.head {
+    width: 70px;
+    height: 28px;
+    border: 1px solid red;
+}
+
+section {
+    z-index: 2;
+    font-family: 'rbno2_lightregular';
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 700px;
+    width: 750px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    // background-image: url("bckgrnd1_small.png");
+    // background-size: contain;
+    display: flex;
+}
+
+footer {
+    height: 70px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    //flex-direction: row;
+    align-items: flex-end;
+    // justify-content: space-between;
+    justify-content: space-around;
+}
+
+li {
+    font-family: 'technique_ol_brknormal';
+    flex-direction: row;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $wh;
+    list-style: none;
+    padding: 10px 95px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: black;
+    border: 2px solid $bl1;
+}
+
+a {
+    color: $wh;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 30%;
+    font-size: 34px;
+    text-align: center;
+}
+
+.circle {
+    // justify-content: center;
+    // align-items: center;
+    margin-left: 28%;
+    margin-top: 17%;
+    border-radius: 50%;
+    border: 3px solid red;
+    width: 200px;
+    height: 200px;
+}
+
+.blue {
+    border-style: groove;
+}
+
+.blue2 {
+    background-color: $bl3;
+}
+
+li:hover {
+    background-color: lighten($bl1, 1%);
+}
+
+.four,
+.one,
+.three,
+.two {
+    color: $wh;
+    font-family: 'rbno2_lightregular';
+    width: 450px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    padding-top: 50px;
+}
+
+.one {
+    margin-top: 2%;
+    width: 750px;
+    height: 750px;
+    // border: 1px solid red;
+    background-image: url("../images/element2.png");
+    background-size: cover;
+    z-index: 1;
+    // position: relative;
+    position: absolute;
+}
+
+.two {
+  opacity: 0.5;
+    width: 350px;
+    height: 450px;
+    border: 1px solid violet;
+    background-image: url("../images/buttons.png");
+    background-size: cover;
+    z-index: 3;
+    position: absolute;
+}
+
+.three {
+    border: 1px solid blue;
+    background-image: url("../images/element4.png");
+    background-size: cover;
+    z-index: 5;
+    position: absolute;
+}
+
+.four {
+    // display: flex;
+    width: 450px;
+    height: 450px;
+    margin-top: 5%;
+    border: 1px solid white;
+    background-image: url("../images/c1.png");
+    background-size: cover;
+    z-index: 7;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
