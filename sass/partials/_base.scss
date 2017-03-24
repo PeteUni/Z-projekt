@@ -14,7 +14,9 @@ body {
     align-items: center;
 }
 
-header {margin-top: 5px;
+header {
+    margin-top: 10px;
+    padding-top: 5px;
     z-index: 1;
     height: 30px;
     width: 100%;
@@ -25,16 +27,41 @@ header {margin-top: 5px;
 }
 
 .head {
-    width: 70px;
+    width: 90px;
     height: 28px;
-    border: 1px solid red;
+    //border: 1px solid white;
+    color: $bl1;
+}
+
+.numbers1 {
+    padding-top: 3px;
+    animation: textSlide 6s infinite alternate;
+}
+
+.numbers2 {
+    padding-bottom: 3px;
+    animation: textSlide 10s infinite alternate;
+}
+
+.numbers4 {
+    padding-top: 5px;
+    animation: textSlide 6s infinite alternate;
+}
+
+.numbers3 {
+    padding-bottom: 5px;
+    animation: textSlide 10s infinite alternate;
+}
+
+.numbers5 {
+    animation: textSlide 6s infinite alternate;
 }
 
 section {
     z-index: 2;
     font-family: 'rbno2_lightregular';
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     height: 700px;
     width: 750px;
     border: 1px solid black;
@@ -83,21 +110,43 @@ a {
     text-decoration: none;
 }
 
-p {
-    margin-top: 30%;
+.back {
+    width: 50px;
+    height: 300px;
+    padding-left: 40px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.inside {
+    width: 50px;
+    margin-top: 28%;
+    margin-left: 35%;
     font-size: 34px;
     text-align: center;
+}
+
+.puls1 {
+    animation: puls 45s infinite alternate;
+}
+
+.puls {
+    animation: puls3 8s infinite normal;
+    // transform: scale(30%);
+    // transform: rotate(60deg);
 }
 
 .circle {
     // justify-content: center;
     // align-items: center;
     margin-left: 28%;
-    margin-top: 17%;
+    margin-top: 16%;
     border-radius: 50%;
-    border: 3px solid red;
+    border: 1px dashed $bl2;
     width: 200px;
     height: 200px;
+    background-color: $bl2;
+    box-shadow: 0px 0px 50px 6px $bl3
 }
 
 .blue {
@@ -118,8 +167,8 @@ li:hover {
 .two {
     color: $wh;
     font-family: 'rbno2_lightregular';
-    width: 450px;
-    height: 450px;
+    // width: 450px;
+    // height: 450px;
     justify-content: center;
     align-items: center;
     background-color: none;
@@ -127,7 +176,7 @@ li:hover {
 }
 
 .one {
-    margin-top: 2%;
+    margin-top: 12%;
     width: 750px;
     height: 750px;
     // border: 1px solid red;
@@ -139,22 +188,24 @@ li:hover {
 }
 
 .two {
-  opacity: 0.5;
-    width: 350px;
-    height: 450px;
+    opacity: 0.5;
+    width: 600px;
+    height: 700px;
     border: 1px solid violet;
     background-image: url("../images/buttons.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 3;
     position: absolute;
 }
 
 .three {
-    border: 1px solid blue;
+    border: 2px solid blue;
     background-image: url("../images/element4.png");
     background-size: cover;
     z-index: 5;
     position: absolute;
+    opacity: 1.5;
 }
 
 .four {
@@ -162,7 +213,7 @@ li:hover {
     width: 450px;
     height: 450px;
     margin-top: 5%;
-    border: 1px solid white;
+    // border: 1px solid white;
     background-image: url("../images/c1.png");
     background-size: cover;
     z-index: 7;
@@ -172,3 +223,23 @@ li:hover {
 .hidden {
     display: none;
 }
+
+// .hexagon-top {
+//     width: 0;
+//     border-top: 30px solid blue;
+//     border-left: 52px solid transparent;
+//     border-right: 52px solid transparent;
+// }
+//
+// .hexagon {
+//   width: 104px;
+//   height: 60px;
+//   background-color: blue;
+// }
+//
+// .hexagon-bottom {
+//   width: 0;
+//   border-bottom: 30px solid blue;
+//   border-left: 52px solid transparent;
+//   border-right: 52px solid transparent;
+// }

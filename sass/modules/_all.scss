@@ -1,31 +1,102 @@
 @font-face {
     font-family: 'technique_ol_brknormal';
-    src: url('techniqo-webfont.woff2') format('woff2'),
-         url('techniqo-webfont.woff') format('woff');
+    src: url('techniqo-webfont.woff2') format('woff2'), url('techniqo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'technique_brknormal';
-    src: url('techniqu-webfont.woff2') format('woff2'),
-         url('techniqu-webfont.woff') format('woff');
+    src: url('techniqu-webfont.woff2') format('woff2'), url('techniqu-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'rbno2_lightregular';
-    src: url('rbno2light-webfont.woff2') format('woff2'),
-         url('rbno2light-webfont.woff') format('woff');
+    src: url('rbno2light-webfont.woff2') format('woff2'), url('rbno2light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rbno2_light_alternative_Rg';
+    src: url('rbno2light_a-webfont.woff2') format('woff2'), url('rbno2light_a-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'rbno2_light_alternative_Rg';
-    src: url('rbno2light_a-webfont.woff2') format('woff2'),
-         url('rbno2light_a-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@keyframes puls {
+    0% { background-color: black;}
+    5% { background-color: lighten(blue, 3%);}
+    8% { background-color: lighten(blue, 17%);}
+    11% { background-color: lighten(#281a99, 3%);}
+    14% { background-color: lighten(blue, 12%);}
+    17% { background-color: lighten(#281a99, 3%);}
+    20% { background-color: lighten(blue, 12%);}
+    23% { background-color: lighten(#281a99, 3%);}
+    26% { background-color: lighten(blue, 12%);}
+    29% { background-color: lighten(#281a99, 3%);}
+    32% { background-color: lighten(#7b26b7, 12%);}
+    35% { background-color: lighten(blue, 3%);}
+    38% { background-color: lighten(#7b26b7, 12%);}
+    41% { background-color: lighten(blue, 3%);}
+    44% { background-color: lighten(#7b26b7, 12%);}
+    47% { background-color: lighten(blue, 3%);}
+    50% { background-color: lighten(blue, 15%);}
+    54% { background-color: lighten(blue, 3%);}
+    // 56% { background-color: lighten(black, 15%);}
+    60% { background-color: lighten(#2146ed, 10%);}
+    64% { background-color: lighten(#6f21ed, 15%);}
+    68% { background-color: lighten(#2146ed, 10%);}
+    72% { background-color: lighten(#6f21ed, 15%);}
+    76% { background-color: lighten(#2146ed, 10%);}
+    80% { background-color: lighten(#6f21ed, 15%);}
+    84% { background-color: lighten(#2146ed, 10%);}
+    88% { background-color: lighten(#6f21ed, 15%); }
+    100% { background-color: black;}
 }
+
+@keyframes textSlide {
+  from{
+    width: 200%;
+    margin-left:100%;
+  }
+  to {
+    width: 5%;
+    margin-left: 0%;
+  }
+}
+
+@keyframes puls3 {
+    0% { opacity: 1;
+        transform: rotate(0deg);
+    }
+    15% { opacity: 0.7;
+      transform: rotate(-60deg);
+    }
+    30% { opacity: 0.4;
+      transform: rotate(60deg);
+    }
+    45%{opacity: 0.6;
+      transform: rotate(100deg);
+    }
+    55%{opacity: 0.4;
+      transform: rotate(-100deg);
+    }
+
+    65%{
+      opacity: 0.2;
+      transform: rotate(220deg);
+    }
+    75%{
+      opacity: 0.4;
+      transform: rotate(-220deg), scale(80%);
+      //transform: scale(80%);
+    }
+    85% {
+          opacity: 0.3;
+          transform: rotate(120deg);
+          //transform: scale(100%);
+        }
+    100% {
+      opacity: 1;
+      transform: rotate(0deg);}
+    }
