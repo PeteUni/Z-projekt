@@ -2,6 +2,7 @@ $main: black;
 $wh: white;
 $bl1: blue;
 $bl2: lightblue;
-$bl3: lighten(blue, 85%);
+$bl3: lighten($bl1, 85%);
+$bl4: #1a4c99;
 $yel: lighten(yellow, 50%);
 $gr: green;
