@@ -452,10 +452,23 @@ li:hover {
     margin-left: 240px;
 }
 
+
+.ord1 {
+  color: $wh;
+  font-size: 25px;
+  width: 100px;
+  height: 22px;
+  border-radius: 15%;
+  border-left: 2px solid $bl4;
+  border-right: 2px solid $bl4;
+  background-color: $main;
+  text-align: center;
+}
+
 .ord {
     color: $wh;
     font-size: 25px;
-    z-index: 20;
+    z-index: 15;
     width: 300px;
     height: 210px;
     border-radius: 15%;
